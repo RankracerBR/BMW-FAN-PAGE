@@ -1,0 +1,102 @@
+/*body{
+  background: linear-gradient(45deg,#fdfdfd,#4b85c7,#fdfdfd); /*Caso o site não atualize as cores, aperte Ctrl + F5 */
+ /* animation: transitionIn 0.75s;
+}*/
+
+
+body {
+  transition: background-color 0.2s ease-in-out;
+  animation: transitionIn 0.85s;
+  background-image: url('/django_project/site_/static/img/BMW_M4.png')
+}
+
+@keyframes transitionIn{
+  from {
+      opacity: 0;
+      transform: rotateX(-10deg);
+  }
+  to {
+      opacity: 1;
+      transform: rotateX(0);
+  }
+}
+
+ul li{
+  position:left;
+  display:inline-block;
+  margin:1rem 1rem;
+  border-radius:5px;
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+ul li:after{
+  content:"";
+  position:left;
+  width:100%;
+  height:100%;
+  opacity:0;
+  border-radius:5px;
+  box-shadow:0 5px 15px 0 rgba(0,0,0,0.3);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  z-index: 1;
+}
+
+ul li:hover{
+  transform:scale(1.25,1.25);
+}
+
+ul li:hover::after{
+  opacity:1;
+}
+
+.bmw {
+  width: 818;
+  border: 10px solid;
+  border-image: linear-gradient(to right, #47d6d6, #53d6e7) 1;
+  box-shadow: 0 0 20px #03fcfc;
+}
+
+/*mix-blend-mode: multiply;*/
+h4 {
+  width: 46;
+  background-color: black;
+  color: yellow;
+  border: 0.1px solid black;
+}
+
+.place{
+  position: absolute;
+  top: 0;
+}
+
+.catalogo{
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.logo{
+position:absolute;
+top:0;
+}
+
+.orcamento{
+  position:absolute;
+  right: 0;
+  top: 0;
+  color:coral;
+}
+
+.voltar{
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.m2{
+  background-color: transparent;
+}
+
+.bm-image{
+  background-image: url('/django_project/site_/static/img/BMW_M4.png')
+}
