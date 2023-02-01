@@ -23,6 +23,6 @@ urlpatterns = [
     path('index/', views.index),
     path('',RedirectView.as_view(url="/index/")),
     path('catalogo/',views.catalogo),
-    path('orcamento/',views.solicitar_financiamento)
+    path('financiamento/',views.solicitar_financiamento,name="financiamento")
 ]
 

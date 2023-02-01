@@ -13,20 +13,15 @@ class Usuario(models.Model):
     def __str__(self):
         return self.nome
 
-class Veiculo(models.Model):
-    marca = models.CharField(max_length=255) 
-    modelo = models.CharField(max_length=255)
-    ano = models.IntegerField()
-    preco = models.CharField(max_length=255)
+class Carro(models.Model):
+    car_model = models.CharField(max_length=100)
+    loan_amount = models.FloatField() #valor do veículo
+    start_date = models.DateTimeField()
+    end_date = models.DateField()
+    interest_rate = models.FloatField()
     
-class Financiamento(models.Model):
-    veiculo = models.ForeignKey(Veiculo, on_delete=models.CASCADE)
-    juros = models.DecimalField(max_digits=5,decimal_places=2)
-    valor = models.CharField(max_length=255)
-    data_inicio = models.DateField()
-    data_vencimento = models.DateTimeField()
     class Meta:
-        db_table = 'veiculo'
-        
+        db_table = 'carro'
+    
     def __str__(self):
-        return self.veiculo
+        return self.car_model

@@ -1,17 +1,13 @@
 from django.contrib import admin
-from core.models import Usuario, Veiculo, Financiamento
+from core.models import Usuario, Carro
 # Register your models here.
 
 class EventoAdmin(admin.ModelAdmin):
      list_display = ('nome','sobrenome')
      list_filter = ('nome','sobrenome')
      
-class VeiculoAdmin(admin.ModelAdmin):
-    list_display = ('marca', 'modelo', 'ano', 'preco')
+class CarroAdmin(admin.ModelAdmin):
+     list_display=('car_model', 'loan_amount', 'start_date', 'end_date', 'interest_rate')
+     
 
-
-class FinanciamentoAdmin():
-     pass
-
-admin.site.register(Usuario, EventoAdmin) 
-admin.site.register(Veiculo,VeiculoAdmin)
+admin.site.register(Carro, CarroAdmin)

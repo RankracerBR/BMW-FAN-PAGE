@@ -1,7 +1,6 @@
 from django.shortcuts import render
 from django.shortcuts import render, redirect
-from .models import Veiculo, Financiamento
-
+from .models import Carro
 
 # Create your views here.
 
@@ -13,26 +12,21 @@ def catalogo(request):
 
 def solicitar_financiamento(request):
     if request.method == 'POST':
-        # Recupera os dados do formulário
-        veiculo_id = request.POST.get('veiculo')
-        valor_financiamento = request.POST.get('valor')
-        juros = request.POST.get('juros')
-        data_inicio = request.POST.get('data_inicio')
-        data_vencimento = request.POST.get('data_vencimento')
-
-        # Recupera o veículo selecionado
-        veiculo = Veiculo.objects.get(pk=veiculo_id)
-
-        # Calcula o valor final do financiamento com juros
-        valor_final = valor_financiamento * (1 + juros / 100)
-
-        # Salva o financiamento no banco de dados
-        financiamento = Financiamento(veiculo=veiculo, juros=juros, valor=valor_final, data_inicio=data_inicio, data_vencimento=data_vencimento)
-        financiamento.save()
-
-        # Redireciona para a página de detalhes do financiamento
-        return redirect('financiamento_detalhes', financiamento_id=financiamento.id)
-    else:
-        # Exibe a página com o formulário de solicitação de financiamento
-        veiculos = Veiculo.objects.all()
-        return render(request, 'financiamento.html', {'veiculos': veiculos})
+        car_model = request.POST['car_model']
+        loan_amount = request.POST['loan_amount']
+        start_date = request.POST['start_date']
+        end_date = request.POST['end_date']
+        
+        #calcular jurso aqui
+        
+        interest_rate = 0.05 
+        
+        Carro.objects.create(
+            car_model = car_model,
+            loan_amount = loan_amount,
+            start_date = start_date,
+            end_date = end_date,
+            interest_rate = interest_rate
+        )
+        
+    return render(request,'financiamento.html')

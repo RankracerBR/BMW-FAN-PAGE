@@ -22,7 +22,6 @@ body {
 }
 
 ul li{
-  position:left;
   display:inline-block;
   margin:1rem 1rem;
   border-radius:5px;
@@ -31,7 +30,6 @@ ul li{
 
 ul li:after{
   content:"";
-  position:left;
   width:100%;
   height:100%;
   opacity:0;
@@ -99,4 +97,27 @@ top:0;
 
 .bm-image{
   background-image: url('/django_project/site_/static/img/BMW_M4.png')
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  }
+
+.dee, .instagram, .linkedin {
+    display: inline-block;
+    text-align: center;
+}
+
+.dee, .instagram, .linkedin {
+    width: 32.33%;
+}
+
+.father-element {
+  width: 100%;
+  text-align: center;
 }

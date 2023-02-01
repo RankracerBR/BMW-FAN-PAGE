@@ -11,3 +11,4 @@ function getRandomColor() {
   }
   return color;
 }
+
