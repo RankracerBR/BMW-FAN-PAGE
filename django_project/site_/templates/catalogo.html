@@ -1,5 +1,6 @@
 {% load static %}
 <!DOCTYPE html>
+
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"> 
 <html>
 <head>
@@ -9,25 +10,28 @@
 <body>
     <script src="{% static 'Js/cor.js' %}"></script>
     <center>
-        <div style="border: 23px solid rgba(0, 0, 0, 0.7);">
+        <div style="border: 30px solid rgba(0, 0, 0, 0.7);">
         </div>
     </center>
     <center>
        <h1>Modelos<h1>
-    <ul>   
+    <ul>
+        <div class="x1">
         <li><text>BMW X1(2022)</text><a href="https://www.bmwagulhasnegras.com.br/novos/x1-2022" target="_blank"><img src="https://production.autoforce.com/uploads/version/profile_image/6377/model_main_webp_comprar-sdrive20i-gp_ed7b142fa2.png.webp" data-valor="300000"></a></l1>  
+        </div>
         <div class="m2">    
         <li><text> BMW M2 COUPÉ</text><a href="https://www.webmotors.com.br/carros/estoque/bmw/m2" target="_blank"><img src="{% static 'img/BMW_M2_COUPE.png'%}"></a></li>    
-        <li><text>BMW M3 (2008)</text><a href="https://www.webmotors.com.br/comprar/bmw/m3/40-coupe-v8-32v-gasolina-2p-manual/2-portas/2008/41033543?pos=b41033543b:&np=1" target="_blank"><img src="{% static 'img/BMW_M3.png'%}"></a></li>  
-    </div>    
+        </div>
+        <div class="m3">
+        <li><text>BMW M3 (2008)</text><a href="https://www.webmotors.com.br/comprar/bmw/m3/40-coupe-v8-32v-gasolina-2p-manual/2-portas/2008/41033543?pos=b41033543b:&np=1" target="_blank"><img src="{% static 'img/BMW_M3.png'%}"></a></li>    
     </ul>  
     </center>
     <div class="voltar">
-    <ul><li><a href="/" align="left"><h5>Voltar</h5></a></li>
+    <ul><li><a href="/" align="left"><h3 style="color: white;">Voltar</h3></a></li>
     </ul>
     </div>
     <div class="orcamento">
-    <ul><li><a href="/financiamento"><h5>Orçamento</h5></a></li>
+    <ul><li><a href="/financiamento"><h3 style="color: white;">Orçamento</h3></a></li>
     </ul>
 </body>
 <link rel="stylesheet" href="{% static 'css/style.css'%}">  
