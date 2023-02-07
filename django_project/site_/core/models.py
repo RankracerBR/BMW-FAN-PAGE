@@ -19,7 +19,7 @@ class Carro(models.Model):
     start_date = models.DateTimeField()
     end_date = models.DateField()
     interest_rate = models.FloatField()
-    
+
     class Meta:
         db_table = 'carro'
     

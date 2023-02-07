@@ -94,7 +94,7 @@ form {
 }
 
 
-.dee,.h4 {
+.dee,h4 {
   position: relative;
   display: inline-block;
   padding: 0 0.5em;
@@ -102,6 +102,7 @@ form {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .instagram,.text {
   position: relative;
   display: inline-block;
@@ -119,3 +120,7 @@ form {
   -webkit-text-fill-color: transparent;
 }
 
+.bem-vindo h1 {
+  padding: 10px;
+  text-shadow: -1px 0 white, 0 0.5px white, 0.5px 0 white, 0 -1px white;
+}
