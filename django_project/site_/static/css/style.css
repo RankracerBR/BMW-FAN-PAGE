@@ -2,6 +2,8 @@
 body {
   transition: background-color 0.2s ease-in-out;
   animation: transitionIn 0.85s;
+  margin: 0;
+  padding: 0;
 }
 
 @keyframes transitionIn{
@@ -38,12 +40,13 @@ ul li:hover::after{
 }
 
 
-.bmw {
+.bmw{
   width: 818;
   border: 10px solid;
   border-image: linear-gradient(to right, #47d6d6, #53d6e7) 1;
   box-shadow: 0 0 20px #03fcfc;
 }
+
 /*mix-blend-mode: multiply;*/
 .place{
   position: absolute;
@@ -94,7 +97,7 @@ form {
 }
 
 
-.dee,h4 {
+.dee, .h4 {
   position: relative;
   display: inline-block;
   padding: 0 0.5em;
@@ -124,3 +127,4 @@ form {
   padding: 10px;
   text-shadow: -1px 0 white, 0 0.5px white, 0.5px 0 white, 0 -1px white;
 }
+
