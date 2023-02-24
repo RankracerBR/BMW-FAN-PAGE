@@ -41,10 +41,11 @@ ul li:hover::after{
 
 
 .bmw{
-  width: 818;
+  width: 818px;
   border: 10px solid;
   border-image: linear-gradient(to right, #47d6d6, #53d6e7) 1;
-  box-shadow: 0 0 20px #03fcfc;
+  box-shadow: 0 0 7px #03fcfc;
+  border-radius: 7px;
 }
 
 /*mix-blend-mode: multiply;*/
@@ -97,7 +98,7 @@ form {
 }
 
 
-.dee, .h4 {
+.dee, h4{
   position: relative;
   display: inline-block;
   padding: 0 0.5em;
@@ -127,4 +128,3 @@ form {
   padding: 10px;
   text-shadow: -1px 0 white, 0 0.5px white, 0.5px 0 white, 0 -1px white;
 }
-
