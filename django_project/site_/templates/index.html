@@ -53,8 +53,11 @@
        <li><a href="https://pt.wikipedia.org/wiki/BMW" target="_blank"><img align= "left" src="{%static 'img/OLD_BMW.gif' %}" width="600"  style="border: 6px solid blue; border-radius: 7px;"><h5 style="font-family: 'Open Sans', sans-serif; color:white;">HISTÓRIA DA BMW</h5></a></li>
        <li>
       </ul>
-        </div>
-      </div>  
+      </div>
+      </div>
+      <audio src="{% static 'audio/prey_song.mp3' %}" loop autoplay></audio>
+      {% block content %}
+      {% endblock %}
   <link rel="stylesheet" href="{% static 'css/style.css'%}">
 </body>
 </html>

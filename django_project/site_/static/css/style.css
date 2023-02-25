@@ -128,3 +128,27 @@ form {
   padding: 10px;
   text-shadow: -1px 0 white, 0 0.5px white, 0.5px 0 white, 0 -1px white;
 }
+
+input[type="text"], input[type="number"], input[type="date"] {
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input[type="submit"]{
+  font-size: 20px;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+} 
+
+input[type="submit"]:hover{
+  background-color: #3e8e41
+}
+
+
+

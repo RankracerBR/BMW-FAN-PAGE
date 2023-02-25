@@ -20,11 +20,17 @@
     <input type="number" name="loan_amount" placeholder="Valor do Financiamento">
     <input type="date" name="start_date" placeholder="Data de Início">
     <input type="date" name="end_date" placeholder="Data de Vencimento">
+    <P></P>
     <input type="submit" value="Enviar">
     <link rel="stylesheet" href="{% static 'css/style.css'%}">
     <script src="{% static 'Js/cor.js' %}"></script>
 </div>
 </form> 
+<center>
+{% if mensagem %}
+    <p>{{ mensagem }}</p>
+{% endif %}
+</center>
 <div class="voltar">
     <ul><li><a href="/catalogo" align="left"><h3 style="color: white;">Voltar</h3></a></li>
 </ul>
