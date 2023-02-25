@@ -5,7 +5,7 @@
 
 ![image](https://user-images.githubusercontent.com/101043200/216276529-fed3daad-61ee-4460-91e4-c32da6bd0a76.png)
 
-![image](https://user-images.githubusercontent.com/101043200/219525507-7ad6bc33-ff5a-4343-83a8-19a8bfa859e6.png)
+![image](https://user-images.githubusercontent.com/101043200/221332674-979e53ef-fc10-40f7-b7a6-b4fa834b154f.png)
 
 <h2>⦿Catálogo</h2>
 
