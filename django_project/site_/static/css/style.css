@@ -147,8 +147,14 @@ input[type="submit"]{
 } 
 
 input[type="submit"]:hover{
-  background-color: #3e8e41
+  background-color: #27a5b6
 }
 
-
-
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  z-index: -1;
+}
