@@ -18,7 +18,7 @@
         </div>  
     </center>
     <div class="bem-vindo">
-    <h1>Bem-Vind@(s)</h1>
+        <h1>Bem-Vind@(s)</h1>
     </div>
     <div class="bmw">
         <img src="https://cdn.dribbble.com/users/107812/screenshots/2776822/bmw_icons.gif">
@@ -50,12 +50,13 @@
     <div class="old_bmw" style="border: 320px solid rgba(0, 0, 0, 0.9); position: relative;">
         <div style="position: absolute; bottom: -170; left: -270;padding: 10px;">
        <ul>   
-       <li><a href="https://pt.wikipedia.org/wiki/BMW" target="_blank"><img align= "left" src="{%static 'img/OLD_BMW.gif' %}" width="600"  style="border: 6px solid blue; border-radius: 7px;"><h5 style="font-family: 'Open Sans', sans-serif; color:white;">HISTÓRIA DA BMW</h5></a></li>
-       <li>
-      </ul>
+       <li><a href="https://pt.wikipedia.org/wiki/BMW" target="_blank"><img align= "left" src="{%static 'img/OLD_BMW.gif' %}" width="500"  style="border: 6px solid blue; border-radius: 7px;"><h5 style="font-family: 'Open Sans', sans-serif; color:white;">HISTÓRIA DA BMW</h5></a></li>
+       <div class="aro_bmw" style="position: absolute; bottom: 20; right: -570;padding: 7px;">
+       <li><a href="https://lista.mercadolivre.com.br/rodas-bmw" target="_blank"><img align="right" src="{%static 'img/ARO_BMW.png'%}" width="405" height="380"style="border: 8px solid blue; border-radius: 8px;"><h5 style="font-family: 'Open Sans', sans-serif; color:white;">COMPRAR AROS</h5></img></a></li>    
+    </ul>
       </div>
-      </div>
-      <audio src="{% static 'audio/prey_song.mp3' %}" loop autoplay></audio>
+      </div> 
+        <audio src="{% static 'audio/prey_song.mp3' %}" loop autoplay></audio>
       {% block content %}
       {% endblock %}
   <link rel="stylesheet" href="{% static 'css/style.css'%}">

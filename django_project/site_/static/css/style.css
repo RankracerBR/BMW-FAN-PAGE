@@ -125,8 +125,10 @@ form {
 }
 
 .bem-vindo h1 {
-  padding: 10px;
-  text-shadow: -1px 0 white, 0 0.5px white, 0.5px 0 white, 0 -1px white;
+  font-family: Arial, sans-serif;
+  font-size: 36px;
+  color: #f3f3f3;
+  -webkit-text-stroke: 1.2px #333;
 }
 
 input[type="text"], input[type="number"], input[type="date"] {
@@ -154,7 +156,17 @@ input[type="submit"]:hover{
   position: fixed;
   right: 0;
   bottom: 0;
+  width: 1366px;
+  height: 768px;
   min-width: 100%; 
   min-height: 100%;
   z-index: -1;
+}
+
+.all_cars, .text{
+  -webkit-text-stroke: 1.1px #f7f7f7;
+}
+
+.x6, .text{
+  position: right
 }

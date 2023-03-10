@@ -34,4 +34,3 @@ def solicitar_financiamento(request):
         mensagem = 'O FINANCIAMENTO FOI SOLICITADO COM SUCESSO!'
         
     return render(request, 'financiamento.html', {'mensagem': mensagem})
-
