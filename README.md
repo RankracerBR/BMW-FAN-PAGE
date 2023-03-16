@@ -6,15 +6,20 @@
 
 ![image](https://user-images.githubusercontent.com/101043200/216276529-fed3daad-61ee-4460-91e4-c32da6bd0a76.png)
 
-![image](https://user-images.githubusercontent.com/101043200/221332674-979e53ef-fc10-40f7-b7a6-b4fa834b154f.png)
+![image](https://user-images.githubusercontent.com/101043200/224259744-2b0a0f1f-bc47-4275-b4b0-4ef5b8865d2d.png)
 
 <h2>⦿Catálogo</h2>
+(Adição de Música!)
 
-![image](https://user-images.githubusercontent.com/101043200/219525608-29e3ffc3-8e44-4e5b-be0e-446bcca1c979.png)
+![image](https://user-images.githubusercontent.com/101043200/224259919-19c47990-a33b-4be5-b4c1-4c4170eb290e.png)
+
+![image](https://user-images.githubusercontent.com/101043200/224260064-24bf8fe5-e642-4173-a991-cee2f42a9bdc.png)
 
 <h2>⦿Orçamento</h2>
+(Adição de Música!)
 
-![image](https://user-images.githubusercontent.com/101043200/221339257-a64db18e-3d56-4def-a294-b52ae4c78362.png)
+![image](https://user-images.githubusercontent.com/101043200/224260238-28295145-5df8-415a-a4dd-970dd831a227.png)
+
 
 
 
