@@ -18,7 +18,7 @@
 <h2>⦿Orçamento</h2>
 (Adição de Música!)
 
-(Correção de Bug: Formulário não pode ser enviado mais vazio)
+(Correção de Bug: Formulário não pode ser enviado vazio)
 
 ![image](https://user-images.githubusercontent.com/101043200/224260238-28295145-5df8-415a-a4dd-970dd831a227.png)
 
