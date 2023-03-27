@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.shortcuts import render, redirect
-from .models import Carro
+from .models import Carro, Usuario
 
 # Create your views here.
 
@@ -13,10 +13,13 @@ def catalogo(request):
 def solicitar_financiamento(request):
     mensagem = None # Inicializa a mensagem como vazia
     if request.method == 'POST':
+        nome = request.POST['nome']
+        sobrenome = request.POST['sobrenome']
         car_model = request.POST['car_model']
         loan_amount = request.POST['loan_amount']
         start_date = request.POST['start_date']
         end_date = request.POST['end_date']
+        
         if not car_model or not loan_amount or not start_date or not end_date:
             mensagem = 'Todos os campos devem ser preenchidos'
         else:
@@ -33,9 +36,13 @@ def solicitar_financiamento(request):
                 end_date = end_date,
                 interest_rate = interest_rate
             )
+            Usuario.objects.create(
+                nome = nome,
+                sobrenome = sobrenome
+            )
 
             # Define a mensagem de sucesso
-            mensagem = 'O FINANCIAMENTO FOI SOLICITADO COM SUCESSO!'
+            mensagem = f'O FINANCIAMENTO FOI SOLICITADO COM SUCESSO! SENHOR(A): {nome} {sobrenome}'
     
     return render(request, 'financiamento.html', {'mensagem': mensagem})
 

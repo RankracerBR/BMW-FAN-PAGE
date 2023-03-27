@@ -6,8 +6,11 @@ class EventoAdmin(admin.ModelAdmin):
      list_display = ('nome','sobrenome')
      list_filter = ('nome','sobrenome')
      
+class UsuarioAdmin(admin.ModelAdmin):
+     list_display = ('nome','sobrenome')
+
 class CarroAdmin(admin.ModelAdmin):
      list_display=('car_model', 'loan_amount', 'start_date', 'end_date', 'interest_rate')
      
-
+admin.site.register(Usuario, UsuarioAdmin)
 admin.site.register(Carro, CarroAdmin)

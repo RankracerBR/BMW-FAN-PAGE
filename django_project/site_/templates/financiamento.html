@@ -16,6 +16,7 @@
 <div class="oracamento">
 <form  id="formulario" method="post">
     {% csrf_token %} 
+    <input type="text" name = "nome" placeholder ="Seu nome"><input type="text" name = "sobrenome" placeholder = "Seu Sobrenome">
     <input type="text" name="car_model" placeholder="Modelo do Carro">
     <input type="number" name="loan_amount" placeholder="Valor do Financiamento">
     <input type="date" name="start_date" placeholder="Data de Início">
