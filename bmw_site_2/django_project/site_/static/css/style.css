@@ -1,0 +1,170 @@
+/*Caso o site não atualize as cores, aperte Ctrl + F5 */
+body {
+  transition: background-color 0.2s ease-in-out;
+  animation: transitionIn 0.85s;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes transitionIn{
+  from {
+      opacity: 0;
+      transform: rotateX(-10deg);
+  }
+  to {
+      opacity: 1;
+      transform: rotateX(0);
+  }
+}
+ul li{
+  display:inline-block;
+  margin:1rem 1rem;
+  border-radius:5px;
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+ul li:after{
+  content:"";
+  width:100%;
+  height:100%;
+  opacity:0;
+  border-radius:5px;
+  box-shadow:0 5px 15px 0 rgba(0,0,0,0.3);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  z-index: 1;
+}
+ul li:hover{
+  transform:scale(1.25,1.25);
+}
+ul li:hover::after{
+  opacity:1;
+}
+
+
+.bmw{
+  width: 818px;
+  border: 10px solid;
+  border-image: linear-gradient(to right, #47d6d6, #53d6e7) 1;
+  box-shadow: 0 0 7px #03fcfc;
+  border-radius: 7px;
+}
+
+/*mix-blend-mode: multiply;*/
+.place{
+  position: absolute;
+  top: 0;
+}
+.catalogo{
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.logo{
+position:absolute;
+top:0;
+}
+.orcamento{
+  position:absolute;
+  right: 0;
+  top: 0;
+  color:coral;
+}
+.voltar{
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  }
+.dee, .instagram, .linkedin {
+    display: inline-block;
+    text-align: center;
+}
+
+.dee, .instagram, .linkedin {
+    width: 32.33%;
+}
+
+.father-element {
+  width: 100%;
+  text-align: center;
+}
+
+
+.dee, h4{
+  position: relative;
+  display: inline-block;
+  padding: 0 0.5em;
+  background-image: linear-gradient(to right, #ffff00, #ffdd00, #ffee00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.instagram,.text {
+  position: relative;
+  display: inline-block;
+  padding: 0 0.5em;
+  background-image: linear-gradient(to right, #a600ff, #ca1fec, #e7fd22);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.linkedin,.text {
+  position: relative;
+  display: inline-block;
+  padding: 0 0.5em;
+  background-image: linear-gradient(to right, #2e5adb,#2e5adb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bem-vindo h1 {
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+}
+
+input[type="text"], input[type="number"], input[type="date"] {
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input[type="submit"]{
+  font-size: 20px;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+} 
+
+input[type="submit"]:hover{
+  background-color: #27a5b6
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 1366px;
+  height: 768px;
+  min-width: 100%; 
+  min-height: 100%;
+  z-index: -1;
+}
+
+.all_cars, .text{
+  -webkit-text-stroke: 1.1px #f7f7f7;
+}
+
+.x6, .text{
+  position: right
+}
